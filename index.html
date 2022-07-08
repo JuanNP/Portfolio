@@ -14,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -39,7 +41,11 @@
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">Juan Niemen</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Front-End Developer - Python Developer - UI/UX Designer</h2>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">
+                            Front-End Developer <br>
+                            Python Developer <br>
+                            UI/UX Designer <br>
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -70,23 +76,42 @@
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/11.jpg" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7 uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>>
+                        <a href="https://github.com/JuanNP/Proyecto-abogados" target="_blank">
+                            <ul class="uk-slideshow-items">
+                                <li>
+                                    <img class="img-fluid mb-3 mb-lg-0" src="assets/img/proyecto-abogados1.png" alt="" uk-cover>
+                                </li>
+                                <li>
+                                    <img class="img-fluid mb-3 mb-lg-0" src="assets/img/proyecto-abogados2.png" alt="" uk-cover>
+                                </li>
+                            </ul>
+                            <a class="uk-slidenav-large uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                            <a class="uk-slidenav-large uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+                        </a>
+                    </div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                            <h4>Página para abogados</h4>
+                            <p class="text-black-50 mb-0">Éste es un proyecto pensado para abogados, en el que permite agregar, 
+                                editar y eliminar clientes y casos. Posee un login para acceder a la página y un apartado que permite 
+                                imprimir un caso de los ya registrados.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><a href="https://github.com/JuanNP/Juego-Web" target="_blank"><img class="img-fluid" src="assets/img/juego-web.png" alt="..." /></a></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Misty</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                    <h4 class="text-white">Juego Memorama</h4>
+                                    <p class="mb-0 text-white-50">Un juego simple que consiste que adivinar las imágenes par 
+                                        del grupo de tarjetas. Cuenta con un contador de vidas y un botón para reiniciar la partida.
+                                    </p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -95,13 +120,16 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><a href="https://github.com/JuanNP/Pagina-noticias" target="_blank"><img class="img-fluid" src="assets/img/pagina-noticias.png" alt="..." /></a></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Mountains</h4>
-                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                                    <h4 class="text-white">Noticias Remolacha</h4>
+                                    <p class="mb-0 text-white-50">Página de noticias vinculada a la página de Remolacha.net en la 
+                                        que se pueden visualizar todas las noticias al día. Cada noticia tiene una descripción y un botón 
+                                        que te dirige a la página de la noticia. 
+                                    </p>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
@@ -109,7 +137,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>  
         <!-- Contact-->
         <section class="contact-section bg-black" id="contact">
             <div class="container px-4 px-lg-5">
@@ -168,5 +196,8 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
     </body>
 </html>
